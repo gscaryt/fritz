@@ -1,0 +1,305 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 [\
+  \{\
+    "scientific_name": "Heliconius erato",\
+    "common_name": "Red Postman",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Classic M\'fcllerian mimicry species (paired with H. melpomene in Heliconius mimicry studies)",\
+    "status": "strong candidate",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Heliconius_erato"\
+  \},\
+  \{\
+    "scientific_name": "Heliconius besckei",\
+    "common_name": null,\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Heliconius mimicry complex (southern Brazil / Atlantic Forest Heliconius)",\
+    "status": "strong candidate",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Heliconius_besckei"\
+  \},\
+  \{\
+    "scientific_name": "Heliconius melpomene",\
+    "common_name": "Postman Butterfly",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Major M\'fcllerian mimicry system (co-mimic with H. erato)",\
+    "status": "strong candidate",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Heliconius_melpomene"\
+  \},\
+  \{\
+    "scientific_name": "Dryas iulia",\
+    "common_name": "Julia Butterfly",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Heliconiine representative common in Neotropical Atlantic/lowland forests",\
+    "status": "strong candidate",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Dryas_iulia"\
+  \},\
+  \{\
+    "scientific_name": "Morpho helenor",\
+    "common_name": "Blue Morpho",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Iconic Brazilian Morpho (large iridescent species, common in collections)",\
+    "status": "essential",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Morpho_helenor"\
+  \},\
+  \{\
+    "scientific_name": "Caligo illioneus",\
+    "common_name": "Illioneus Giant Owl",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Large owl butterfly widespread in South America, including Brazil",\
+    "status": "essential",\
+    "commons_url": null\
+  \},\
+  \{\
+    "scientific_name": "Hamadryas feronia",\
+    "common_name": "Cracker Butterfly",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Neotropical Biblidinae; common \'91blue cracker\'92 in open wooded habitats",\
+    "status": "essential",\
+    "commons_url": "https://commons.wikimedia.org/wiki/Hamadryas_feronia"\
+  \},\
+  \{\
+    "scientific_name": "Diaethria clymena",\
+    "common_name": "Eighty-eight Butterfly",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Neotropical \'9188\'92 species, widespread from Mexico to Peru and Brazil",\
+    "status": "essential",\
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Diaethria_clymena.jpg"\
+  \},\
+  \{\
+    "scientific_name": "Mechanitis polymnia",\
+    "common_name": "Orange-spotted Tiger Clearwing",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Ithomiine involved in classical Neotropical mimicry complexes",\
+    "status": null,\
+    "commons_url": null\
+  \},\
+  \{\
+    "scientific_name": "Mechanitis lysimnia",\
+    "common_name": "Confused Tigerwing",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Ithomiine; gregarious larvae on Solanum, common in disturbed forest",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Mechanitis_lysimnia"\
+  \},\
+  \{\
+    "scientific_name": "Greta oto",\
+    "common_name": "Glasswing",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Transparent-winged ithomiine present in Neotropical forest assemblages",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Greta_oto"\
+  \},\
+  \{\
+    "scientific_name": "Methona themisto",\
+    "common_name": "Themisto Amberwing (Borboleta-do-manac\'e1)",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Transparent amberwing; common in Brazilian forest habitats",\
+    "status": null,\
+    "commons_url": null\
+  \},\
+  \{\
+    "scientific_name": "Parides anchises",\
+    "common_name": "Anchises Cattleheart",\
+    "family": "Papilionidae",\
+    "fritz_muller_connection": "Neotropical swallowtail; widely distributed and common",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Parides_anchises"\
+  \},\
+  \{\
+    "scientific_name": "Battus polydamas",\
+    "common_name": "Gold Rim Swallowtail",\
+    "family": "Papilionidae",\
+    "fritz_muller_connection": "Tailed swallowtail complex in Neotropical habitats, including Brazil",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Battus_polydamas"\
+  \},\
+  \{\
+    "scientific_name": "Phoebis sennae",\
+    "common_name": "Cloudless Sulphur",\
+    "family": "Pieridae",\
+    "fritz_muller_connection": "Common sulphur from South America north to the USA",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Phoebis_sennae"\
+  \},\
+  \{\
+    "scientific_name": "Phoebis philea",\
+    "common_name": "Orange-barred Sulphur",\
+    "family": "Pieridae",\
+    "fritz_muller_connection": "Large orange sulphur, widespread in the Neotropics",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Phoebis_philea"\
+  \},\
+  \{\
+    "scientific_name": "Ascia monuste",\
+    "common_name": "Great Southern White",\
+    "family": "Pieridae",\
+    "fritz_muller_connection": "Neotropical/nearctic white commonly recorded from Brazil to the USA",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Ascia_monuste"\
+  \},\
+  \{\
+    "scientific_name": "Eurema albula",\
+    "common_name": "Ghost Yellow",\
+    "family": "Pieridae",\
+    "fritz_muller_connection": "Small yellow in tropical forests from the Caribbean to Brazil",\
+    "status": null,\
+    "commons_url": null\
+  \},\
+  \{\
+    "scientific_name": "Juditha molpe",\
+    "common_name": null,\
+    "family": "Riodinidae",\
+    "fritz_muller_connection": "Neotropical metalmark recorded in Brazilian assemblages",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Juditha_molpe"\
+  \},\
+  \{\
+    "scientific_name": "Panara jarbas",\
+    "common_name": null,\
+    "family": "Riodinidae",\
+    "fritz_muller_connection": "Riodinid from Drury 1782, present in Neotropical forests",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Panara_jarbas"\
+  \},\
+  \{\
+    "scientific_name": "Mesosemia telegone",\
+    "common_name": null,\
+    "family": "Riodinidae",\
+    "fritz_muller_connection": "Riodinid with well-illustrated Commons specimens",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Mesosemia_telegone"\
+  \},\
+  \{\
+    "scientific_name": "Agraulis vanillae",\
+    "common_name": "Gulf Fritillary",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Heliconiine fritillary, common in Neotropical gardens and open habitats",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Agraulis_vanillae"\
+  \},\
+  \{\
+    "scientific_name": "Dione juno",\
+    "common_name": "Juno Longwing",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Heliconiine from southern USA to South America",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Dione_juno"\
+  \},\
+  \{\
+    "scientific_name": "Siproeta stelenes",\
+    "common_name": "Malachite",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Common Neotropical brush-footed butterfly; abundant from Central to South America",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Siproeta_stelenes"\
+  \},\
+  \{\
+    "scientific_name": "Historis odius",\
+    "common_name": null,\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Coeini nymphalid with a well-defined Neotropical range",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Historis_odius"\
+  \},\
+  \{\
+    "scientific_name": "Biblis hyperia",\
+    "common_name": null,\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Widespread Neotropical nymphalid; visually distinctive for exhibits",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Biblis_hyperia"\
+  \},\
+  \{\
+    "scientific_name": "Temenis laothoe",\
+    "common_name": "Orange Banner",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Abundant \'91banner\'92 butterfly in Central and South America forest habitats",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Temenis_laothoe"\
+  \},\
+  \{\
+    "scientific_name": "Colobura dirce",\
+    "common_name": "Zebra Mosaic",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "\'91Zebra\'92 nymphalid from Mexico through northern South America",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Colobura_dirce"\
+  \},\
+  \{\
+    "scientific_name": "Memphis moruus",\
+    "common_name": null,\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Leaf-mimicking nymphalid (Anaeini), present in Neotropical forests",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Memphis_moruus"\
+  \},\
+  \{\
+    "scientific_name": "Prepona laertes",\
+    "common_name": "Shaded-blue Leafwing",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Blue leafwing widely distributed in Central and South America",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Prepona_laertes"\
+  \},\
+  \{\
+    "scientific_name": "Archaeoprepona demophon",\
+    "common_name": "One-spotted Prepona",\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Prepona shoemaker occurring from Mexico to northern South America",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Archaeoprepona_demophon"\
+  \},\
+  \{\
+    "scientific_name": "Morpho aega",\
+    "common_name": null,\
+    "family": "Nymphalidae",\
+    "fritz_muller_connection": "Atlantic Forest Morpho; genus well represented in Brazilian collections",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Morpho_aega"\
+  \},\
+  \{\
+    "scientific_name": "Urbanus proteus",\
+    "common_name": "Long-tailed Skipper",\
+    "family": "Hesperiidae",\
+    "fritz_muller_connection": "Common long-tailed skipper from South America north into the USA",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Urbanus_proteus"\
+  \},\
+  \{\
+    "scientific_name": "Epargyreus tmolis",\
+    "common_name": null,\
+    "family": "Hesperiidae",\
+    "fritz_muller_connection": "Hesperiid recorded from Neotropical forest regions",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Epargyreus_tmolis"\
+  \},\
+  \{\
+    "scientific_name": "Pyrrhopyge charybdis",\
+    "common_name": null,\
+    "family": "Hesperiidae",\
+    "fritz_muller_connection": "Pyrrhopygine skipper with good photographic coverage on Commons",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Pyrrhopyge_charybdis"\
+  \},\
+  \{\
+    "scientific_name": "Autochton longipennis",\
+    "common_name": "Spike-banded Skipper",\
+    "family": "Hesperiidae",\
+    "fritz_muller_connection": "Eudaminae skipper present in Neotropical forest and edge habitats",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/Category:Autochton_longipennis"\
+  \},\
+  \{\
+    "scientific_name": "Riodina lysippus",\
+    "common_name": null,\
+    "family": "Riodinidae",\
+    "fritz_muller_connection": "Type species of Riodinidae; occurs in northern South America and Caribbean",\
+    "status": null,\
+    "commons_url": "https://commons.wikimedia.org/wiki/File:Riodina_lysippus_(2972976100).jpg"\
+  \}\
+]}
