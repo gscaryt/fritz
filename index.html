@@ -156,7 +156,6 @@ body {
 }
 .gcard-img img {
   width: 88%; height: 88%; object-fit: contain;
-  mix-blend-mode: multiply;
 }
 .gcard-img .placeholder {
   position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
@@ -164,7 +163,8 @@ body {
 }
 .gcard-body { padding: 8px 10px 10px; }
 .gcard-nome { font-size: .82rem; font-weight: 700; line-height: 1.2; }
-.gcard-vibe { font-size: .66rem; font-style: italic; color: var(--gold); margin: 2px 0 0; }
+.gcard-latin { font-size: .62rem; font-style: italic; color: var(--dim); margin-top: 1px; }
+.gcard-vibe { font-size: .66rem; font-style: italic; color: var(--gold); margin: 3px 0 0; }
 
 /* ── DETAIL OVERLAY ──────────────────────────────────────── */
 .detail-overlay {
@@ -181,19 +181,13 @@ body {
 }
 .detail-img img {
   width: 88%; height: 88%; object-fit: contain;
-  mix-blend-mode: multiply;
 }
 
 .detail-nome { font-size: 1.4rem; font-weight: 900; text-align: center; margin-top: 8px; }
+.detail-latin { font-size: .78rem; font-style: italic; color: var(--dim); text-align: center; margin-top: 2px; }
 .detail-vibe { font-size: .88rem; font-style: italic; color: var(--gold); margin: 3px 0 8px; }
 .detail-section { font-size: .6rem; letter-spacing: 2px; color: var(--dim); text-transform: uppercase; margin: 10px 0 3px; }
 .detail-text { font-size: .88rem; line-height: 1.6; color: rgba(240,235,216,.82); text-align: center; max-width: 340px; }
-.detail-construction {
-  background: rgba(242,184,49,.1); border: 1px solid rgba(242,184,49,.25);
-  border-radius: 12px; padding: 12px 16px; max-width: 340px;
-  font-size: .8rem; line-height: 1.55; color: rgba(240,235,216,.85); margin-top: 12px;
-  text-align: center;
-}
 .btn-close-detail {
   position: sticky; top: 0; align-self: flex-end; z-index: 10;
   background: rgba(255,255,255,.12); border: none; color: var(--text);
@@ -295,12 +289,11 @@ body {
   box-shadow: 0 6px 30px rgba(0,0,0,.55), inset 0 0 0 3px rgba(0,0,0,.07); flex-shrink: 0;
 }
 .bfly-sym {
-  position: absolute; border-radius: 50%; overflow: hidden;
-  background: var(--card); user-select: none; box-shadow: 0 1px 4px rgba(0,0,0,.12);
+  position: absolute; user-select: none;
 }
 .bfly-sym img {
   width: 100%; height: 100%; object-fit: contain;
-  mix-blend-mode: multiply; pointer-events: none; display: block;
+  pointer-events: none; display: block;
 }
 .bfly-sym .ph { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-size: 1.4em; }
 #bottom-card .bfly-sym { cursor: pointer; }
@@ -408,7 +401,7 @@ body {
     </div>
     <div class="game-title">ENCONTRE!</div>
     <div class="game-subtitle" id="subtitle">
-      Ache a única borboleta em comum entre as duas cartas e toque nela o mais rápido que puder.
+      Ache a única borboleta ou mariposa em comum entre as duas cartas e toque nela o mais rápido que puder.
     </div>
     <div class="best-badge" id="best-badge" style="display:none"></div>
 
@@ -426,6 +419,13 @@ body {
       <button class="opt-btn active" data-sec="60"  onclick="selDuration(this)">60s</button>
       <button class="opt-btn"        data-sec="90"  onclick="selDuration(this)">90s</button>
       <button class="opt-btn"        data-sec="120" onclick="selDuration(this)">120s</button>
+    </div>
+
+    <div class="section-label">Dificuldade</div>
+    <div class="opt-row">
+      <button class="opt-btn active" data-extra="0" onclick="selDifficulty(this)">Fácil</button>
+      <button class="opt-btn"        data-extra="1" onclick="selDifficulty(this)">Médio</button>
+      <button class="opt-btn"        data-extra="2" onclick="selDifficulty(this)">Difícil</button>
     </div>
 
     <div class="section-label">Velocidade de Rotação</div>
@@ -448,13 +448,13 @@ body {
     <div class="gallery-header">
       <button class="btn-back" onclick="showStart()">← Voltar</button>
       <div>
-        <div class="gallery-title" id="gallery-title">Galeria de Borboletas</div>
+        <div class="gallery-title" id="gallery-title">Galeria de Borboletas e Mariposas</div>
         <div class="gallery-count" id="gallery-count">Toque para saber mais</div>
       </div>
     </div>
 
     <div class="construction-banner">
-      🚧 Estas borboletinhas coloridas são desenhos de brincadeira, criados só para o jogo — nenhuma identificação científica real. Quer conhecer os insetos de verdade da coleção? Toque em <strong>Acervo</strong> na tela inicial! 🦋
+      🦋 Estas são borboletas e mariposas de verdade, com fotos e nomes científicos reais, vindas de todo o mundo! As curiosidades contadas aqui são só de brincadeira — mas o que mais você acha que pode ter de especial em cada uma delas? Toque em <strong>Acervo</strong> na tela inicial para conhecer a coleção de verdade do museu. Ou melhor ainda, vem visitar a gente na Casa Fritz Müller!
     </div>
 
     <!-- Grid: borboletas estilizadas (25) -->
@@ -502,14 +502,11 @@ body {
     </div>
 
     <div class="detail-nome" id="detail-nome"></div>
+    <div class="detail-latin" id="detail-latin"></div>
     <div class="detail-vibe" id="detail-vibe"></div>
 
-    <div class="detail-section">Curiosidade</div>
+    <div class="detail-section">Fuxico da floresta</div>
     <div class="detail-text" id="detail-info"></div>
-
-    <div class="detail-construction">
-      🚧 Esta é só uma ilustração de brincadeira enquanto o jogo está em construção — em breve ela vai ganhar uma foto de borboleta de verdade!
-    </div>
   </div>
 
   <!-- ── JOGO ── -->
@@ -567,136 +564,300 @@ body {
 
 <script>
 // ═══════════════════════════════════════════════════════════
-//  BORBOLETAS DO JOGO — 25 ilustrações de brincadeira
-//  Personagens fictícios, só para diversão. Nenhuma identificação
-//  científica real — o jogo ainda está em construção!
+//  BORBOLETAS DO JOGO — 72 fotos reais do acervo, com nome
+//  científico verdadeiro. O apelido, a vibe e a curiosidade de
+//  cada uma são invenção nossa, só de brincadeira — não são
+//  fatos científicos reais! (veja o aviso na Galeria)
 // ═══════════════════════════════════════════════════════════
 const BUTTERFLIES = [
-  {
-    nome:'Dama Laranjinha', vibe:'sempre a primeira a chegar na festa',
-    imgFile:'./hq/1.png', color:'#E65100',
-    info:'Adora desfilar suas listras alaranjadas e nunca perde a chance de dar um rodopio no ar.'
-  },
-  {
-    nome:'Azulinha Sapeca', vibe:'curiosa e levinha',
-    imgFile:'./hq/2.png', color:'#42A5F5',
-    info:'Voa em ziguezague só para deixar todo mundo tentando adivinhar para onde ela vai.'
-  },
-  {
-    nome:'Vermelhinha Corajosa', vibe:'não tem medo de nada',
-    imgFile:'./hq/3.png', color:'#B71C1C',
-    info:'Gosta de pousar bem no topo da flor mais alta, só para mostrar que chegou primeiro.'
-  },
-  {
-    nome:'Fofolimão', vibe:'parece uma folhinha feliz',
-    imgFile:'./hq/4.png', color:'#F9A825',
-    info:'Fica tão paradinha entre as folhas que até as amigas se confundem e passam voando direto.'
-  },
-  {
-    nome:'Azul Serena', vibe:'tranquila e brilhante',
-    imgFile:'./hq/5.png', color:'#1565C0',
-    info:'Prefere voar bem devagar, curtindo cada raiozinho de sol no caminho.'
-  },
-  {
-    nome:'Ruiva Arteira', vibe:'sempre pronta pra um close',
-    imgFile:'./hq/6.png', color:'#BF360C',
-    info:'É fã de jardins cheios de flores — ninguém sabe explicar o motivo, ela só gosta assim.'
-  },
-  {
-    nome:'Limãozinho Voador', vibe:'madruga cedinho',
-    imgFile:'./hq/7.png', color:'#F9A825',
-    info:'Costuma ser a primeira a aparecer quando o sol nasce — adianta o relógio de tanta pressa.'
-  },
-  {
-    nome:'Azul Brilhante', vibe:'cintilante',
-    imgFile:'./hq/8.png', color:'#1565C0',
-    info:'Quando bate sol nas asas dela, parece que alguém ligou uma luzinha escondida.'
-  },
-  {
-    nome:'Verdinha Camuflada', vibe:'mestra do esconde-esconde',
-    imgFile:'./hq/9.png', color:'#558B2F',
-    info:'Fecha as asinhas e vira quase invisível entre as folhas — campeã de esconde-esconde do jardim.'
-  },
-  {
-    nome:'Alegrinha das Manchas', vibe:'pontuada de alegria',
-    imgFile:'./hq/10.png', color:'#E65100',
-    info:'Tem tantas bolinhas nas asas que ninguém nunca conseguiu contar todas até o fim.'
-  },
-  {
-    nome:'Azul Delicada', vibe:'suave como uma nuvem',
-    imgFile:'./hq/11.png', color:'#1976D2',
-    info:'Prefere os cantinhos mais calmos do jardim, bem longe da agitação das outras.'
-  },
-  {
-    nome:'Vírgula Traquina', vibe:'adora uma pausa',
-    imgFile:'./hq/12.png', color:'#E65100',
-    info:'Tem uma marquinha escondida nas asas que parece uma vírgula — ninguém sabe se é de propósito.'
-  },
-  {
-    nome:'Gigante Dourado', vibe:'o maior do bairro',
-    imgFile:'./hq/13.png', color:'#F57F17',
-    info:'É uma das maiores da turma e adora fazer questão de esticar bem as asas pra mostrar o tamanho.'
-  },
-  {
-    nome:'Ciano Fofura', vibe:'gelada por fora, doce por dentro',
-    imgFile:'./hq/14.png', color:'#00ACC1',
-    info:'Tem uma cor tão diferente que parece ter mergulhado numa piscininha azul-turquesa.'
-  },
-  {
-    nome:'Rei das Caudinhas', vibe:'com estilo de realeza',
-    imgFile:'./hq/15.png', color:'#F9A825',
-    info:'As pontinhas das asas parecem uma capa — ela adora se sentir a realeza do jardim.'
-  },
-  {
-    nome:'Olhos-de-Pavão', vibe:'cheia de surpresas',
-    imgFile:'./hq/16.png', color:'#C62828',
-    info:'Quando abre as asas de repente, mostra uns olhinhos enormes só para brincar de assustar.'
-  },
-  {
-    nome:'Azulão Elétrico', vibe:'brilho que ninguém explica',
-    imgFile:'./hq/17.png', color:'#1A237E',
-    info:'O azul dela parece mudar de tom conforme o ângulo — segredo que nem ela mesma conta.'
-  },
-  {
-    nome:'Turquesinha Tímida', vibe:'quase transparente de tão clarinha',
-    imgFile:'./hq/18.png', color:'#80DEEA',
-    info:'É tão discreta que parece ter medo de chamar atenção — mas todo mundo repara nela assim mesmo.'
-  },
-  {
-    nome:'Rosa Migrante', vibe:'sempre de malas prontas',
-    imgFile:'./hq/19.png', color:'#E91E63',
-    info:'Adora viajar — ninguém sabe o destino final, só que ela está sempre de partida pra algum lugar novo.'
-  },
-  {
-    nome:'Azulão Real', vibe:'grandiosa',
-    imgFile:'./hq/20.png', color:'#1565C0',
-    info:'Voa bem devagar só para garantir que todo mundo consiga admirar direitinho o azul das asas.'
-  },
-  {
-    nome:'Manteiguinha Voadora', vibe:'docinha e amarela',
-    imgFile:'./hq/21.png', color:'#F9A825',
-    info:'Parece ter sido pintada com manteiga derretida de tão amarelinha e brilhante.'
-  },
-  {
-    nome:'Preto-e-Ouro', vibe:'elegância total',
-    imgFile:'./hq/22.png', color:'#212121',
-    info:'Combina preto com detalhes dourados, como se estivesse sempre pronta pra uma festa chique.'
-  },
-  {
-    nome:'Azul Profundo', vibe:'misteriosa',
-    imgFile:'./hq/23.png', color:'#1565C0',
-    info:'Ninguém nunca a vê parada — está sempre em movimento, brilhando de um jeito diferente a cada instante.'
-  },
-  {
-    nome:'Chama Dourada', vibe:'quentinha por dentro',
-    imgFile:'./hq/24.png', color:'#E65100',
-    info:'Parece uma pequena chama voando pelo jardim, com um toque de vermelho e preto.'
-  },
-  {
-    nome:'Verde-Esperança', vibe:'sempre sorridente',
-    imgFile:'./hq/25.png', color:'#558B2F',
-    info:'É verdinha por cima e por baixo — só ela sabe o segredo de combinar tantos tons de verde.'
-  },
+  { common:'Mariposa-tigre', latin:'Euplagia quadripunctaria',
+    nome:'Rendinha de Fogo', vibe:'gosta de decote ousado',
+    imgFile:'./butterflies_extracted/1.png', color:'#E65100',
+    info:'Suas asas parecem bordadas à mão, mas ela garante que já nasceu pronta pra festa.' },
+  { common:'Dama-pintada', latin:'Vanessa cardui',
+    nome:'Viajante Pintada', vibe:'nunca fica parada',
+    imgFile:'./butterflies_extracted/2.png', color:'#BF360C',
+    info:'Dizem que ela já visitou mais jardins que qualquer outra — ninguém confirma, mas todo mundo acredita.' },
+  { common:'Azul-de-giz', latin:'Polyommatus coridon',
+    nome:'Azul-Giz', vibe:'parece desenhada a lápis',
+    imgFile:'./butterflies_extracted/3.png', color:'#64B5F6',
+    info:'Tão clarinha que alguns juram que ela desbotou no sol de tanto passear.' },
+  { common:'Marrom-do-muro', latin:'Lasiommata megera',
+    nome:'Xadrezinha do Muro', vibe:'adora tomar sol na parede',
+    imgFile:'./butterflies_extracted/4.png', color:'#8D6E63',
+    info:'Escolhe sempre a pedra mais quentinha do muro pra fazer bronzeamento vespertino.' },
+  { common:'Risca-roxa', latin:'Neozephyrus quercus',
+    nome:'Risquinho Roxo', vibe:'discreta mas brilhante',
+    imgFile:'./butterflies_extracted/5.png', color:'#7B1FA2',
+    info:'Tem um brilho roxo que só aparece com o sol no ângulo certo — e ela sabe disso e faz pose.' },
+  { common:'Amarela-das-nuvens', latin:'Colias croceus',
+    nome:'Nuvem Amarela', vibe:'flutua igual pipoca de sol',
+    imgFile:'./butterflies_extracted/6.png', color:'#FBC02D',
+    info:'Voa tão rapidinho que parece um pedacinho de sol solto no ar.' },
+  { common:'Almirante-vermelho', latin:'Vanessa atalanta',
+    nome:'Almirante Vermelhinho', vibe:'comanda o jardim com estilo',
+    imgFile:'./butterflies_extracted/7.png', color:'#C62828',
+    info:'Bate continência com as antenas pra quem passa — pelo menos é o que ela acha que faz.' },
+  { common:'Rabo-de-andorinha', latin:'Papilionidae',
+    nome:'Rabo-de-Fraque', vibe:'sempre bem-vestida',
+    imgFile:'./butterflies_extracted/8.png', color:'#F9A825',
+    info:'As caudinhas das asas parecem as pontas de um fraque — ela nunca sai sem elas.' },
+  { common:'Risca-verde', latin:'Callophrys rubi',
+    nome:'Esmeraldinha Escondida', vibe:'camuflada até demais',
+    imgFile:'./butterflies_extracted/9.png', color:'#558B2F',
+    info:'Fecha as asas e vira uma folhinha verde — até ela mesma se perde de vista às vezes.' },
+  { common:'Imperador-púrpura', latin:'Apatura iris',
+    nome:'Imperatriz Roxa', vibe:'realeza do alto da árvore',
+    imgFile:'./butterflies_extracted/10.png', color:'#4A148C',
+    info:'Prefere copas altas das árvores — ela acha que jardim é lugar pra plebeus.' },
+  { common:'Ponta-laranja', latin:'Anthocharis cardamines',
+    nome:'Pontinha de Laranja', vibe:'toque final impecável',
+    imgFile:'./butterflies_extracted/11.png', color:'#FB8C00',
+    info:'Como se alguém tivesse mergulhado só a pontinha das asas dela em suco de laranja.' },
+  { common:'Pavão', latin:'Aglais io',
+    nome:'Olhos de Pavão', vibe:'adora um susto de brincadeira',
+    imgFile:'./butterflies_extracted/12.png', color:'#AD1457',
+    info:'Abre as asas de repente só pra ver todo mundo pular — depois finge que não foi de propósito.' },
+  { common:'Rabo-de-andorinha-oriental', latin:'Papilio glaucus',
+    nome:'Gigante Amarelo', vibe:'a maior da turma',
+    imgFile:'./butterflies_extracted/13.png', color:'#F57F17',
+    info:'Estica as asas ao máximo sempre que alguém tira foto — ela sabe que é a mais vistosa do bairro.' },
+  { common:'Rabo-de-andorinha-zebra', latin:'Eurytides marcellus',
+    nome:'Zebrinha Alada', vibe:'listras que ninguém copia',
+    imgFile:'./butterflies_extracted/14.png', color:'#37474F',
+    info:'Corre tanto risco de ser confundida com uma zebra minúscula que já nem se incomoda mais.' },
+  { common:'Olho-de-boi', latin:'Junonia coenia',
+    nome:'Moedinha de Olhos', vibe:'cheia de olhinhos por toda parte',
+    imgFile:'./butterflies_extracted/15.png', color:'#6D4C41',
+    info:'Tem tantas manchas redondas que parece ter guardado moedas nas asas.' },
+  { common:'Azul-de-cauda', latin:'Cupido comyntas',
+    nome:'Azulzinha de Bolso', vibe:'pequena mas cheia de charme',
+    imgFile:'./butterflies_extracted/16.png', color:'#1976D2',
+    info:'É tão pequenininha que cabe na palma da mão — mas o orgulho dela é do tamanho do céu.' },
+  { common:'Monarca', latin:'Danaus plexippus',
+    nome:'Rainha Laranja', vibe:'viaja pra todo lado',
+    imgFile:'./butterflies_extracted/17.png', color:'#E65100',
+    info:'Faz tanta viagem longa que os pais dela nem sabem mais em que país ela nasceu.' },
+  { common:'Pavão-branco', latin:'Anartia jatrophae',
+    nome:'Fantasminha de Olhos', vibe:'branca e assustadora (fofa)',
+    imgFile:'./butterflies_extracted/18.png', color:'#B0BEC5',
+    info:'Quase transparente, ela adora aparecer do nada e sumir de novo antes que alguém repare.' },
+  { common:'Dama-pintada', latin:'Vanessa cardui',
+    nome:'Pintorinha Andarilha', vibe:'artista de mochila nas costas',
+    imgFile:'./butterflies_extracted/19.png', color:'#BF360C',
+    info:'Ela jura que pinta as próprias asas todo santo dia — ninguém nunca viu o pincel.' },
+  { common:'Amarela-de-faixa-laranja', latin:'Phoebis philea',
+    nome:'Faixa Laranja', vibe:'sempre elegante com listras',
+    imgFile:'./butterflies_extracted/20.png', color:'#FB8C00',
+    info:'Usa a mesma faixa laranja em todo look — ela chama isso de "clássico atemporal".' },
+  { common:'Roxa-pintada-de-vermelho', latin:'Limenitis arthemis',
+    nome:'Roxa de Pintas Vermelhas', vibe:'combina cores que ninguém ousaria',
+    imgFile:'./butterflies_extracted/21.png', color:'#5E35B1',
+    info:'Mistura roxo escuro com pontinhos vermelhos e ainda acha que inventou a moda.' },
+  { common:'Saltador-grisalho', latin:'Pyrgus malvae',
+    nome:'Saltitante Grisalha', vibe:'pula de flor em flor num pulo só',
+    imgFile:'./butterflies_extracted/22.png', color:'#78909C',
+    info:'Voa tão rápido de uma flor a outra que parece estar sempre atrasada pra algum compromisso.' },
+  { common:'Risca-roxa-do-colorado', latin:'Hypaurotis crysalus',
+    nome:'Roxa das Montanhas', vibe:'adora altitude',
+    imgFile:'./butterflies_extracted/23.png', color:'#6A1B9A',
+    info:'Só se sente em casa lá no alto — quanto mais perto das montanhas, mais feliz ela fica.' },
+  { common:'Pequena-metálica', latin:'Calephelis virginiensis',
+    nome:'Metalzinho Brilhante', vibe:'a menorzinha, mas reluzente',
+    imgFile:'./butterflies_extracted/24.png', color:'#EF6C00',
+    info:'É pequenininha, mas jura que brilha mais forte que qualquer lâmpada do jardim.' },
+  { common:'Coração-vermelho', latin:'Anaea marthesia',
+    nome:'Coração Vermelho', vibe:'usa o coração na asa',
+    imgFile:'./butterflies_extracted/25.png', color:'#B71C1C',
+    info:'Tem uma manchinha em formato de coração — ela diz que é pra ninguém esquecer o tamanho do carinho dela.' },
+  { common:'Rabo-de-andorinha-sul-americana', latin:'Eurytides stenodesmus',
+    nome:'Andarilha do Sul', vibe:'orgulhosa das origens',
+    imgFile:'./butterflies_extracted/26.png', color:'#F9A825',
+    info:'Voa sempre em linha reta, como se tivesse destino certo e hora marcada.' },
+  { common:'Borboleta-pássaro-de-cairns', latin:'Ornithoptera euphorion',
+    nome:'Asa de Passarinho', vibe:'tão grande que parece ave',
+    imgFile:'./butterflies_extracted/27.png', color:'#2E7D32',
+    info:'É tão grande que, de longe, muita gente já confundiu ela com um passarinho fugido do ninho.' },
+  { common:'Morfo-aurora', latin:'Morpho aurora',
+    nome:'Aurora Azulada', vibe:'brilho de amanhecer',
+    imgFile:'./butterflies_extracted/28.png', color:'#1565C0',
+    info:'Reflete um azul tão intenso que parece carregar um pedacinho do céu da madrugada nas asas.' },
+  { common:'Borboleta-numerada', latin:'Callicore cynosura',
+    nome:'Numerada Misteriosa', vibe:'tem uns desenhos esquisitos nas asas',
+    imgFile:'./butterflies_extracted/29.png', color:'#E65100',
+    info:'Tem um desenho na asa parecido com um número — ninguém decifrou o código secreto ainda.' },
+  { common:'Fantasma-corado', latin:'Cithaerias pireta',
+    nome:'Fantasminha Corada', vibe:'quase invisível, um pouco tímida',
+    imgFile:'./butterflies_extracted/30.png', color:'#EC407A',
+    info:'As asas dela são tão transparentes que ela jura ficar vermelha de vergonha sempre que alguém repara.' },
+  { common:'Albatroz-laranja', latin:'Appias nero',
+    nome:'Marinheira Laranja', vibe:'voa longas distâncias sem parar',
+    imgFile:'./butterflies_extracted/31.png', color:'#FB8C00',
+    info:'Voa que nem quem não tem pressa de chegar — só de passear pelo caminho mais longo.' },
+  { common:'Imitadora-púrpura', latin:'Anaea tyrianthina',
+    nome:'Sombra Arroxeada', vibe:'copia o estilo dos outros',
+    imgFile:'./butterflies_extracted/32.png', color:'#6A1B9A',
+    info:'É craque em imitar o visual de outras borboletas — ela chama isso de "inspiração", não cópia.' },
+  { common:'Majestosa-franjada', latin:'Ancyluris formosissima',
+    nome:'Rainha de Babados', vibe:'cheia de detalhes e frescura',
+    imgFile:'./butterflies_extracted/33.png', color:'#AD1457',
+    info:'Tem tantos babadinhos e cores na asa que parece ter se vestido pra um baile de gala.' },
+  { common:'Laranja-e-azul', latin:'Asterope markii',
+    nome:'Duas Caras Coloridas', vibe:'muda de cor dependendo do lado',
+    imgFile:'./butterflies_extracted/34.png', color:'#00838F',
+    info:'De um lado é laranja, do outro é azul — ela nunca decidiu qual cor combina mais com ela.' },
+  { common:'Asa-de-vidro-de-cauda-longa', latin:'Chorinea faunus',
+    nome:'Vidrinho Alado', vibe:'parece feita de vidro colorido',
+    imgFile:'./butterflies_extracted/35.png', color:'#26A69A',
+    info:'As asas dela parecem vitral de igreja — só falta o sol atravessar pra fazer a mágica acontecer.' },
+  { common:'Amarela-sem-nuvens', latin:'Phoebis sennae',
+    nome:'Amarela Sem Nuvem', vibe:'sempre de bom humor',
+    imgFile:'./butterflies_extracted/36.png', color:'#FDD835',
+    info:'Nunca tem uma manchinha de mau humor — só um amarelo puro, do jeito que ela gosta de viver.' },
+  { common:'Amarela-do-capim', latin:'Eurema hecabe',
+    nome:'Gramadinha Amarela', vibe:'vive rasteira entre o capim',
+    imgFile:'./butterflies_extracted/37.png', color:'#F9A825',
+    info:'Prefere voar bem baixinho, rente à grama, como se estivesse sempre procurando algo perdido.' },
+  { common:'Pachá-de-duas-caudas', latin:'Charaxes jasius',
+    nome:'Pachá das Duas Caudas', vibe:'realeza com duplo estilo',
+    imgFile:'./butterflies_extracted/38.png', color:'#8D6E63',
+    info:'Tem duas caudinhas na asa e adora se gabar de ter o dobro de estilo das outras.' },
+  { common:'Rabo-de-espada-negro', latin:'Papilio polyxenes asterius',
+    nome:'Espadachim Negro', vibe:'duelista das flores',
+    imgFile:'./butterflies_extracted/39.png', color:'#212121',
+    info:'Voa em zigue-zague como se estivesse esgrimindo com o vento — ninguém nunca viu a espada de verdade.' },
+  { common:'Faixa-dourada-da-floresta', latin:'Euphaedra neophron',
+    nome:'Faixa de Ouro da Mata', vibe:'tesouro escondido no mato',
+    imgFile:'./butterflies_extracted/40.png', color:'#C9A227',
+    info:'Tem uma faixa dourada tão bonita que parece ter encontrado um tesouro escondido na floresta.' },
+  { common:'Beleza-da-montanha', latin:'Aeropetes tulbaghia',
+    nome:'Beleza da Montanha', vibe:'vaidosa com vista privilegiada',
+    imgFile:'./butterflies_extracted/41.png', color:'#D84315',
+    info:'Só gosta de pousar lá no alto, onde a vista é boa e todo mundo pode admirá-la de baixo.' },
+  { common:'Monarca-africana', latin:'Danaus chrysippus',
+    nome:'Rainha Laranja da Savana', vibe:'prima distante da Rainha Laranja',
+    imgFile:'./butterflies_extracted/42.png', color:'#E65100',
+    info:'Garante que é prima de longe daquela borboleta laranja famosa lá da América — ninguém confirmou o parentesco.' },
+  { common:'Planadora-rubra', latin:'Cymothoe sangaris',
+    nome:'Planadora Rubi', vibe:'desliza sem bater asa',
+    imgFile:'./butterflies_extracted/43.png', color:'#B71C1C',
+    info:'Adora planar sem esforço, deixando o vento fazer todo o trabalho enquanto ela só aproveita o passeio.' },
+  { common:'Ninfa-lilás', latin:'Asterope pechuelli',
+    nome:'Ninfa Lilás de Pintas', vibe:'delicada e pontuada',
+    imgFile:'./butterflies_extracted/44.png', color:'#9575CD',
+    info:'Tem um tom lilás tão suave que parece ter sido pintada com aquarela ao entardecer.' },
+  { common:'Morfo-azul', latin:'Morpho peleides',
+    nome:'Azul Espelhado', vibe:'a mais famosa do bairro',
+    imgFile:'./butterflies_extracted/45.png', color:'#1565C0',
+    info:'O azul dela é tão brilhante que ela usa as próprias asas quase como espelho de bolso.' },
+  { common:'Folha-verde-disfarçada', latin:'Charaxes eupale',
+    nome:'Disfarce Foliar', vibe:'mestra do camuflar-se',
+    imgFile:'./butterflies_extracted/46.png', color:'#558B2F',
+    info:'Fecha as asas e vira uma folha perfeita — ela mesma às vezes esquece que é uma borboleta.' },
+  { common:'Madrepérola-azul', latin:'Protogoniomorpha temora',
+    nome:'Madrepérola Azulada', vibe:'brilho de concha rara',
+    imgFile:'./butterflies_extracted/47.png', color:'#4FC3F7',
+    info:'As asas brilham feito madrepérola — ela garante que nasceu assim, sem precisar de polimento.' },
+  { common:'Curinga-pintado', latin:'Byblia ilithyia',
+    nome:'Curinga de Pintas', vibe:'a engraçadinha da coleção',
+    imgFile:'./butterflies_extracted/48.png', color:'#E65100',
+    info:'Adora pregar peça voando de um jeito que ninguém espera — ela é o coringa do baralho de borboletas.' },
+  { common:'Nababo-da-china', latin:'Polyura narcaeus',
+    nome:'Nababo Oriental', vibe:'anda com ares de nobreza',
+    imgFile:'./butterflies_extracted/49.png', color:'#8D6E63',
+    info:'Voa devagar e com pose, como se fosse cumprimentar a corte imperial a qualquer momento.' },
+  { common:'Judy-sombria', latin:'Abisara fylla',
+    nome:'Judinha Sombria', vibe:'gosta da sombra da mata',
+    imgFile:'./butterflies_extracted/50.png', color:'#4E342E',
+    info:'Prefere os cantinhos mais escuros da floresta — luz demais não é bem o estilo dela.' },
+  { common:'Imitadora-de-aldânia', latin:'Aldania imitans',
+    nome:'Imitadora Aldânia', vibe:'copiar é a especialidade',
+    imgFile:'./butterflies_extracted/51.png', color:'#6D4C41',
+    info:'É tão boa imitando outras borboletas que às vezes nem ela sabe mais qual é o próprio visual original.' },
+  { common:'Nervura-negra', latin:'Aporia agathon',
+    nome:'Veias Pretas Grandiosas', vibe:'desenho de nervuras chique',
+    imgFile:'./butterflies_extracted/52.png', color:'#37474F',
+    info:'Tem as veias das asas desenhadas em preto, como se tivesse sido riscada a nanquim por um artista caprichoso.' },
+  { common:'Mapa-chinês', latin:'Araschnia davidis',
+    nome:'Mapa Vivo', vibe:'nunca se perde',
+    imgFile:'./butterflies_extracted/53.png', color:'#EF6C00',
+    info:'Tem tantas linhas nas asas que parece carregar seu próprio mapa — nunca precisa perguntar o caminho.' },
+  { common:'Moinho-de-vento', latin:'Atrophaneura polyeuctes',
+    nome:'Moinho de Vento', vibe:'gira que nem cata-vento',
+    imgFile:'./butterflies_extracted/54.png', color:'#B71C1C',
+    info:'Bate as asas num ritmo tão engraçado que parece um pequeno moinho de vento em miniatura.' },
+  { common:'Pavão-da-china', latin:'Papilio bianor',
+    nome:'Pavão do Oriente', vibe:'exibicionista nata',
+    imgFile:'./butterflies_extracted/55.png', color:'#00897B',
+    info:'Adora abrir bem as asas na hora certa pra garantir que todo mundo veja seu desenho mais bonito.' },
+  { common:'Vírgula-falsa', latin:'Nymphalis l-album',
+    nome:'Vírgula Falsa', vibe:'pontuação enganosa',
+    imgFile:'./butterflies_extracted/56.png', color:'#EF6C00',
+    info:'Tem uma marquinha que parece uma vírgula na asa, mas ela garante que é só um desenho, sem gramática nenhuma.' },
+  { common:'Papagaio', latin:'Stibochiona nicea',
+    nome:'Papagaio Alado', vibe:'fala pelos cotovelos (ou antenas)',
+    imgFile:'./butterflies_extracted/57.png', color:'#00838F',
+    info:'O nome dela lembra papagaio, mas quem já ouviu ela cantar? Ninguém — borboleta não canta, mas ela adoraria.' },
+  { common:'Nababo-solene', latin:'Polyura dolon',
+    nome:'Nababo Solene', vibe:'formal até no voo',
+    imgFile:'./butterflies_extracted/58.png', color:'#5D4037',
+    info:'Voa em linha reta e cerimoniosa, como se estivesse sempre desfilando num evento muito importante.' },
+  { common:'Soco-laranja', latin:'Dodona egeon',
+    nome:'Soco de Laranja', vibe:'chega chegando',
+    imgFile:'./butterflies_extracted/59.png', color:'#FB8C00',
+    info:'Aparece de repente no jardim com tanta energia que parece ter dado um verdadeiro "soco" de cor no ambiente.' },
+  { common:'Renda-vermelha', latin:'Cethosia biblis',
+    nome:'Renda Vermelha', vibe:'delicada como bordado',
+    imgFile:'./butterflies_extracted/60.png', color:'#C62828',
+    info:'As asas parecem rendinha bordada à mão — ela trata cada padrão como uma verdadeira obra de arte.' },
+  { common:'Asa-de-vidro', latin:'Acraea andromacha',
+    nome:'Asa de Vidro', vibe:'quase some no ar',
+    imgFile:'./butterflies_extracted/61.png', color:'#26A69A',
+    info:'Partes da asa dela são tão transparentes que parecem de vidro — dá pra ver o jardim através dela.' },
+  { common:'Azul-de-icílio', latin:'Jalmenus icilius',
+    nome:'Azulzinho Icílio', vibe:'pequena joia rara',
+    imgFile:'./butterflies_extracted/62.png', color:'#1E88E5',
+    info:'É rara de se ver, então quando aparece, todo mundo para pra admirar o azul brilhante dela.' },
+  { common:'Andarilha-menor', latin:'Danaus chrysippus',
+    nome:'Andarilha Modesta', vibe:'viaja sem alarde',
+    imgFile:'./butterflies_extracted/63.png', color:'#E65100',
+    info:'Não gosta de chamar atenção enquanto viaja — prefere passar discretinha de flor em flor.' },
+  { common:'Azul-da-ervilha', latin:'Lampides boeticus',
+    nome:'Ervilha Azulada', vibe:'pequena e redondinha de charme',
+    imgFile:'./butterflies_extracted/64.png', color:'#42A5F5',
+    info:'É tão pequena quanto uma ervilha, mas garante ter o dobro do charme de qualquer borboleta grande.' },
+  { common:'Almirante-australiano', latin:'Vanessa itea',
+    nome:'Almirante do Sul', vibe:'patrulha o jardim inteiro',
+    imgFile:'./butterflies_extracted/65.png', color:'#C62828',
+    info:'Voa de um lado a outro do jardim como se estivesse sempre fazendo ronda pra garantir que está tudo em ordem.' },
+  { common:'Migrante-de-limão', latin:'Catopsilia pomona',
+    nome:'Limãozinho Migrante', vibe:'sempre de mala pronta',
+    imgFile:'./butterflies_extracted/66.png', color:'#FDD835',
+    info:'Muda de jardim com tanta frequência que ninguém sabe ao certo onde ela mora de verdade.' },
+  { common:'Migrante-laranja', latin:'Catopsilia scylla',
+    nome:'Laranjinha Andarilha', vibe:'prima da Limãozinho',
+    imgFile:'./butterflies_extracted/67.png', color:'#FB8C00',
+    info:'Segue sempre o mesmo caminho da prima amarela, só que vestida de laranja pra não serem confundidas.' },
+  { common:'Ovinho-comum', latin:'Hypolimnas bolina',
+    nome:'Ovinho Alado', vibe:'redondinha e fofa',
+    imgFile:'./butterflies_extracted/68.png', color:'#37474F',
+    info:'Tem manchas tão redondas nas asas que parecem ovinhos pintados à mão.' },
+  { common:'Argos-do-prado', latin:'Junonia villida',
+    nome:'Guardiã do Prado', vibe:'vigia com olhos enormes',
+    imgFile:'./butterflies_extracted/69.png', color:'#6D4C41',
+    info:'Tem manchas que parecem olhos enormes — ela jura que são pra vigiar o prado inteiro sozinha.' },
+  { common:'Rabo-de-andorinha-xadrez', latin:'Papilio demoleus',
+    nome:'Xadrez Voador', vibe:'nunca perde um quadradinho',
+    imgFile:'./butterflies_extracted/70.png', color:'#F9A825',
+    info:'O padrão xadrez das asas é tão certinho que parece ter sido conferido quadradinho por quadradinho.' },
+  { common:'Dama-pintada', latin:'Vanessa cardui',
+    nome:'Pintada Globetrotter', vibe:'mora em todo canto do mundo',
+    imgFile:'./butterflies_extracted/71.png', color:'#BF360C',
+    info:'Já apareceu em tantos continentes diferentes que ninguém sabe mais qual foi o primeiro jardim dela.' },
+  { common:'Rabo-de-andorinha-desbotado', latin:'Papilio anactus',
+    nome:'Descolorida Chique', vibe:'simplicidade com estilo',
+    imgFile:'./butterflies_extracted/72.png', color:'#455A64',
+    info:'Não tem cores berrantes, mas garante que o preto e branco discreto dela nunca sai de moda.' },
 ];
 
 // ═══════════════════════════════════════════════════════════
@@ -734,7 +895,7 @@ function buildDeck() {
 
 const DECK   = buildDeck();
 const NCARDS = DECK.length;        // 21
-const NSYM   = BUTTERFLIES.length; // 25 (21 por sessão via shuffle)
+const NSYM   = BUTTERFLIES.length; // 72 (21 usadas p/ match a cada sessão, via shuffle; o resto vira enfeite/dificuldade)
 const ROUNDS    = 10;
 const MAX_WRONG = 5;
 
@@ -782,7 +943,7 @@ let symOrder=[], topIdx=0, botIdx=0, hand=[];
 let round=0, wrongCnt=0, matches=0;
 let t0=0, tickId=null, rafId=null, prevRaf=0;
 let angle=0, rSpeed=14000, blocked=false, paused=false, gameOn=false;
-let mode='classic', duration=60;
+let mode='classic', duration=60, extraCount=0;
 let roundStart=0;
 let bestClassic={}, bestTimed={};
 let sfxMuted = safeGet('fritz_mute') === '1';
@@ -830,8 +991,9 @@ function toggleMute(){
 // ═══════════════════════════════════════════════════════════
 const layoutCache={};
 
-function layout(sizes, R){
-  const minR=R*.12, maxR=R*.62, GAP=1.5, pts=[];
+function layout(sizes, R, seed){
+  const minR=R*.12, maxR=R*.62, GAP=1.5, pts=seed?seed.slice():[];
+  const seedLen=pts.length;
   for(let i=0;i<sizes.length;i++){
     let best=null, bestScore=-1;
     for(let pass=0;pass<2&&best===null;pass++){
@@ -858,7 +1020,7 @@ function layout(sizes, R){
       s:sizes[i]
     });
   }
-  return pts;
+  return pts.slice(seedLen);
 }
 
 function cardLayout(deckIdx){
@@ -881,9 +1043,71 @@ function cardPx(){
 }
 
 // ═══════════════════════════════════════════════════════════
+//  BORBOLETAS EXTRAS (Dificuldade) — enfeites que nunca são a
+//  resposta certa, só deixam a carta mais cheia de procurar.
+//  Escolhidas de forma a nunca repetir com nenhuma borboleta
+//  real (de match) das duas cartas do round, nem entre si.
+// ═══════════════════════════════════════════════════════════
+let roundDecorUsed = new Set();
+
+function pickExtraSymbols(deckIdx, partnerDeckIdx, count){
+  if(count<=0) return [];
+  const avoid = new Set(roundDecorUsed);
+  DECK[deckIdx].forEach(rs=>avoid.add(symOrder[rs]));
+  DECK[partnerDeckIdx].forEach(rs=>avoid.add(symOrder[rs]));
+  const pool=[];
+  for(let i=0;i<BUTTERFLIES.length;i++) if(!avoid.has(i)) pool.push(i);
+  const picked=shuffle(pool).slice(0,count);
+  picked.forEach(i=>roundDecorUsed.add(i));
+  return picked;
+}
+
+function extrasLayout(realFr, count){
+  if(count<=0) return [];
+  const minF=0.20, maxF=0.34;
+  const sizes=Array.from({length:count},()=>minF+Math.random()*(maxF-minF));
+  const seed=realFr.map(p=>({x:p.x,y:p.y,s:p.f}));
+  const pos=layout(sizes,1,seed);
+  return sizes.map((s,i)=>({x:pos[i].x,y:pos[i].y,f:s,rot:Math.round(Math.random()*20-10)}));
+}
+
+// ═══════════════════════════════════════════════════════════
 //  RENDERIZAR CARTA
 // ═══════════════════════════════════════════════════════════
-function renderCard(el, deckIdx, clickable){
+function makeSymEl(b, fr, R, rawSI, clickable){
+  const fsz=Math.round(fr.f*R);
+  const rot=fr.rot;
+  const wrap=document.createElement('div');
+  wrap.className='bfly-sym';
+  const half=fsz*.5;
+  wrap.style.cssText=[
+    `left:${R+fr.x*R-half}px`,
+    `top:${R+fr.y*R-half}px`,
+    `width:${fsz}px`, `height:${fsz}px`,
+    `--sr:${rot}deg`, `transform:rotate(${rot}deg)`,
+    `background:${b.imgSrc ? 'transparent' : b.color}`,
+  ].join(';');
+
+  if(b.imgSrc){
+    const img=document.createElement('img');
+    img.src=b.imgSrc; img.alt=b.common;
+    img.onerror=()=>{ img.style.display='none'; };
+    wrap.appendChild(img);
+  } else {
+    const ph=document.createElement('div');
+    ph.className='ph'; ph.textContent='🦋';
+    wrap.appendChild(ph);
+  }
+
+  if(clickable){
+    const fire=e=>{ e.preventDefault(); e.stopPropagation(); onTap(rawSI, wrap); };
+    if(window.PointerEvent) wrap.addEventListener('pointerdown',fire);
+    else { wrap.addEventListener('touchstart',fire,{passive:false}); wrap.addEventListener('click',fire); }
+  }
+  return wrap;
+}
+
+function renderCard(el, deckIdx, clickable, partnerDeckIdx){
   el.innerHTML='';
   const sz=cardPx();
   el.style.width=el.style.height=sz+'px';
@@ -893,38 +1117,16 @@ function renderCard(el, deckIdx, clickable){
   symIdxs.forEach((rawSI,i)=>{
     const bIdx=symOrder[rawSI];
     const b=BUTTERFLIES[bIdx];
-    const fsz=Math.round(fr[i].f*R);
-    const rot=fr[i].rot;
-
-    const wrap=document.createElement('div');
-    wrap.className='bfly-sym';
-    const half=fsz*.5;
-    wrap.style.cssText=[
-      `left:${R+fr[i].x*R-half}px`,
-      `top:${R+fr[i].y*R-half}px`,
-      `width:${fsz}px`, `height:${fsz}px`,
-      `--sr:${rot}deg`, `transform:rotate(${rot}deg)`,
-      `background:${b.imgSrc ? 'var(--card)' : b.color}`,
-    ].join(';');
-
-    if(b.imgSrc){
-      const img=document.createElement('img');
-      img.src=b.imgSrc; img.alt=b.nome;
-      img.onerror=()=>{ img.style.display='none'; };
-      wrap.appendChild(img);
-    } else {
-      const ph=document.createElement('div');
-      ph.className='ph'; ph.textContent='🦋';
-      wrap.appendChild(ph);
-    }
-
-    if(clickable){
-      const fire=e=>{ e.preventDefault(); e.stopPropagation(); onTap(rawSI, wrap); };
-      if(window.PointerEvent) wrap.addEventListener('pointerdown',fire);
-      else { wrap.addEventListener('touchstart',fire,{passive:false}); wrap.addEventListener('click',fire); }
-    }
-    el.appendChild(wrap);
+    el.appendChild(makeSymEl(b, fr[i], R, rawSI, clickable));
   });
+
+  if(extraCount>0 && partnerDeckIdx!=null){
+    const extraIdxs=pickExtraSymbols(deckIdx, partnerDeckIdx, extraCount);
+    const extraFr=extrasLayout(fr, extraIdxs.length);
+    extraIdxs.forEach((bIdx,i)=>{
+      el.appendChild(makeSymEl(BUTTERFLIES[bIdx], extraFr[i], R, -1, clickable));
+    });
+  }
 
   el.classList.remove('card-in'); void el.offsetWidth; el.classList.add('card-in');
   setTimeout(()=>el.classList.remove('card-in'),350);
@@ -1003,7 +1205,7 @@ function buildGlossary(){
     imgWrap.appendChild(ph);
     if(b.imgSrc){
       const img = document.createElement('img');
-      img.src = b.imgSrc; img.alt = b.nome;
+      img.src = b.imgSrc; img.alt = b.common;
       img.onload = () => { ph.style.display = 'none'; };
       img.onerror = () => { img.remove(); };
       imgWrap.appendChild(img);
@@ -1012,8 +1214,9 @@ function buildGlossary(){
     const body = document.createElement('div');
     body.className = 'gcard-body';
     body.innerHTML =
-      `<div class="gcard-nome">${b.nome}</div>`+
-      `<div class="gcard-vibe">${b.vibe}</div>`;
+      `<div class="gcard-nome">${b.common}</div>`+
+      `<div class="gcard-latin">${b.latin}</div>`+
+      `<div class="gcard-vibe">“${b.nome}” · ${b.vibe}</div>`;
 
     card.appendChild(imgWrap);
     card.appendChild(body);
@@ -1033,8 +1236,9 @@ function openDetail(i){
   artImg.src = b.imgSrc || '';
   artImg.style.display = b.imgSrc ? '' : 'none';
 
-  document.getElementById('detail-nome').textContent = b.nome;
-  document.getElementById('detail-vibe').textContent = b.vibe;
+  document.getElementById('detail-nome').textContent = b.common;
+  document.getElementById('detail-latin').textContent = b.latin;
+  document.getElementById('detail-vibe').textContent = `“${b.nome}” — ${b.vibe}`;
   document.getElementById('detail-info').textContent = b.info;
 
   ov.classList.add('open');
@@ -1187,7 +1391,7 @@ function selMode(btn){
   document.getElementById('dur-label').style.display=timed?'':'none';
   document.getElementById('subtitle').textContent=timed
     ? 'Faça o maior número de acertos antes que o tempo acabe!'
-    : 'Ache a única borboleta em comum entre as duas cartas e toque nela o mais rápido que puder.';
+    : 'Ache a única borboleta ou mariposa em comum entre as duas cartas e toque nela o mais rápido que puder.';
   refreshBest();
 }
 function selDuration(btn){
@@ -1200,6 +1404,11 @@ function selSpeed(btn){
   btn.parentNode.querySelectorAll('.opt-btn').forEach(b=>b.classList.remove('active'));
   btn.classList.add('active');
   rSpeed=+btn.dataset.ms;
+}
+function selDifficulty(btn){
+  btn.parentNode.querySelectorAll('.opt-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  extraCount=+btn.dataset.extra;
 }
 
 // ═══════════════════════════════════════════════════════════
@@ -1250,8 +1459,9 @@ function startGame(){
 
   showScreen('game-screen');
   renderLives(); updateStack();
-  renderCard(document.getElementById('top-card'),    topIdx, false);
-  renderCard(document.getElementById('bottom-card'), botIdx, true);
+  roundDecorUsed=new Set();
+  renderCard(document.getElementById('top-card'),    topIdx, false, botIdx);
+  renderCard(document.getElementById('bottom-card'), botIdx, true,  topIdx);
 
   roundStart=t0=performance.now();
   clearInterval(tickId);
@@ -1316,20 +1526,21 @@ function onTap(rawSI, wrap){
     setTimeout(()=>{
       if(!gameOn) return;
       blocked=false;
+      roundDecorUsed=new Set();
       if(mode==='timed'){
         matches++;
         topIdx=botIdx; botIdx=pickDiff(topIdx);
         document.getElementById('matches-num').textContent=matches;
         updateStack();
-        renderCard(document.getElementById('top-card'),    topIdx, false);
-        renderCard(document.getElementById('bottom-card'), botIdx, true);
+        renderCard(document.getElementById('top-card'),    topIdx, false, botIdx);
+        renderCard(document.getElementById('bottom-card'), botIdx, true,  topIdx);
       } else {
         topIdx=hand[round]; round++;
         if(round>=ROUNDS){endGame(false);return;}
         botIdx=hand[round];
         renderPips(); updateStack();
-        renderCard(document.getElementById('top-card'),    topIdx, false);
-        renderCard(document.getElementById('bottom-card'), botIdx, true);
+        renderCard(document.getElementById('top-card'),    topIdx, false, botIdx);
+        renderCard(document.getElementById('bottom-card'), botIdx, true,  topIdx);
       }
       roundStart=performance.now();
     },420);

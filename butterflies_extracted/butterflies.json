@@ -1,0 +1,506 @@
+{
+  "1": {
+    "number": 1,
+    "common_name": "Jersey Tiger",
+    "scientific_name": "Euplagia quadripunctaria",
+    "region": "European Butterflies",
+    "file": "1.png"
+  },
+  "2": {
+    "number": 2,
+    "common_name": "Painted Lady",
+    "scientific_name": "Vanessa cardui",
+    "region": "European Butterflies",
+    "file": "2.png"
+  },
+  "3": {
+    "number": 3,
+    "common_name": "Chalkhill Blue",
+    "scientific_name": "Polyommatus coridon",
+    "region": "European Butterflies",
+    "file": "3.png"
+  },
+  "4": {
+    "number": 4,
+    "common_name": "Wall Brown",
+    "scientific_name": "Lasiommata megera",
+    "region": "European Butterflies",
+    "file": "4.png"
+  },
+  "5": {
+    "number": 5,
+    "common_name": "Purple Hairstreak",
+    "scientific_name": "Neozephyrus quercus",
+    "region": "European Butterflies",
+    "file": "5.png"
+  },
+  "6": {
+    "number": 6,
+    "common_name": "Clouded Yellow",
+    "scientific_name": "Colias croceus",
+    "region": "European Butterflies",
+    "file": "6.png"
+  },
+  "7": {
+    "number": 7,
+    "common_name": "Red Admiral",
+    "scientific_name": "Vanessa atalanta",
+    "region": "European Butterflies",
+    "file": "7.png"
+  },
+  "8": {
+    "number": 8,
+    "common_name": "Swallowtail",
+    "scientific_name": "Papilionidae",
+    "region": "European Butterflies",
+    "file": "8.png"
+  },
+  "9": {
+    "number": 9,
+    "common_name": "Green Hairstreak",
+    "scientific_name": "Callophrys rubi",
+    "region": "European Butterflies",
+    "file": "9.png"
+  },
+  "10": {
+    "number": 10,
+    "common_name": "Purple Emperor",
+    "scientific_name": "Apatura iris",
+    "region": "European Butterflies",
+    "file": "10.png"
+  },
+  "11": {
+    "number": 11,
+    "common_name": "Orange Tip",
+    "scientific_name": "Anthocharis cardamines",
+    "region": "European Butterflies",
+    "file": "11.png"
+  },
+  "12": {
+    "number": 12,
+    "common_name": "Peacock",
+    "scientific_name": "Aglais io",
+    "region": "European Butterflies",
+    "file": "12.png"
+  },
+  "13": {
+    "number": 13,
+    "common_name": "Eastern Swallowtail",
+    "scientific_name": "Papilio glaucus",
+    "region": "North American Butterflies",
+    "file": "13.png"
+  },
+  "14": {
+    "number": 14,
+    "common_name": "Zebra Swallowtail",
+    "scientific_name": "Eurytides marcellus",
+    "region": "North American Butterflies",
+    "file": "14.png"
+  },
+  "15": {
+    "number": 15,
+    "common_name": "Common Buckeye",
+    "scientific_name": "Junonia coenia",
+    "region": "North American Butterflies",
+    "file": "15.png"
+  },
+  "16": {
+    "number": 16,
+    "common_name": "Eastern-tailed Blue",
+    "scientific_name": "Cupido comyntas",
+    "region": "North American Butterflies",
+    "file": "16.png"
+  },
+  "17": {
+    "number": 17,
+    "common_name": "Monarch",
+    "scientific_name": "Danaus plexippus",
+    "region": "North American Butterflies",
+    "file": "17.png"
+  },
+  "18": {
+    "number": 18,
+    "common_name": "White Peacock",
+    "scientific_name": "Anartia jatrophae",
+    "region": "North American Butterflies",
+    "file": "18.png"
+  },
+  "19": {
+    "number": 19,
+    "common_name": "Painted Lady",
+    "scientific_name": "Vanessa cardui",
+    "region": "North American Butterflies",
+    "file": "19.png"
+  },
+  "20": {
+    "number": 20,
+    "common_name": "Orange Barred Sulphur",
+    "scientific_name": "Phoebis philea",
+    "region": "North American Butterflies",
+    "file": "20.png"
+  },
+  "21": {
+    "number": 21,
+    "common_name": "Red Spotted Purple",
+    "scientific_name": "Limenitis arthemis",
+    "region": "North American Butterflies",
+    "file": "21.png"
+  },
+  "22": {
+    "number": 22,
+    "common_name": "Grizzled Skipper",
+    "scientific_name": "Pyrgus malvae",
+    "region": "North American Butterflies",
+    "file": "22.png"
+  },
+  "23": {
+    "number": 23,
+    "common_name": "Colorado Hairstreak",
+    "scientific_name": "Hypaurotis crysalus",
+    "region": "North American Butterflies",
+    "file": "23.png"
+  },
+  "24": {
+    "number": 24,
+    "common_name": "Little Metalmark",
+    "scientific_name": "Calephelis virginiensis",
+    "region": "North American Butterflies",
+    "file": "24.png"
+  },
+  "25": {
+    "number": 25,
+    "common_name": "Red Heart Butterfly",
+    "scientific_name": "Anaea marthesia",
+    "region": "Butterflies of South America",
+    "file": "25.png"
+  },
+  "26": {
+    "number": 26,
+    "common_name": "South American Swallowtail",
+    "scientific_name": "Eurytides stenodesmus",
+    "region": "Butterflies of South America",
+    "file": "26.png"
+  },
+  "27": {
+    "number": 27,
+    "common_name": "Cairns Birdwing",
+    "scientific_name": "Ornithoptera euphorion",
+    "region": "Butterflies of South America",
+    "file": "27.png"
+  },
+  "28": {
+    "number": 28,
+    "common_name": "Blue Aurora Morpho",
+    "scientific_name": "Morpho aurora",
+    "region": "Butterflies of South America",
+    "file": "28.png"
+  },
+  "29": {
+    "number": 29,
+    "common_name": "BD Butterfly",
+    "scientific_name": "Callicore cynosura",
+    "region": "Butterflies of South America",
+    "file": "29.png"
+  },
+  "30": {
+    "number": 30,
+    "common_name": "Blushing Phantom",
+    "scientific_name": "Cithaerias pireta",
+    "region": "Butterflies of South America",
+    "file": "30.png"
+  },
+  "31": {
+    "number": 31,
+    "common_name": "Orange Albatross Butterfly",
+    "scientific_name": "Appias nero",
+    "region": "Butterflies of South America",
+    "file": "31.png"
+  },
+  "32": {
+    "number": 32,
+    "common_name": "Purple Mimic",
+    "scientific_name": "Anaea tyrianthina",
+    "region": "Butterflies of South America",
+    "file": "32.png"
+  },
+  "33": {
+    "number": 33,
+    "common_name": "Frilled Majestic Butterfly",
+    "scientific_name": "Ancyluris formosissima Verso",
+    "region": "Butterflies of South America",
+    "file": "33.png"
+  },
+  "34": {
+    "number": 34,
+    "common_name": "Orange Blue Butterfly",
+    "scientific_name": "Asterope markii",
+    "region": "Butterflies of South America",
+    "file": "34.png"
+  },
+  "35": {
+    "number": 35,
+    "common_name": "Long Tailed Glasswing Swallowtail",
+    "scientific_name": "Chorinea faunus",
+    "region": "Butterflies of South America",
+    "file": "35.png"
+  },
+  "36": {
+    "number": 36,
+    "common_name": "Cloudless Sulphur",
+    "scientific_name": "Phoebis sennae",
+    "region": "Butterflies of South America",
+    "file": "36.png"
+  },
+  "37": {
+    "number": 37,
+    "common_name": "Common Grass Yellow",
+    "scientific_name": "Eurema hecabe",
+    "region": "Butterflies of Africa",
+    "file": "37.png"
+  },
+  "38": {
+    "number": 38,
+    "common_name": "Two-tailed Pasha",
+    "scientific_name": "Charaxes jasius",
+    "region": "Butterflies of Africa",
+    "file": "38.png"
+  },
+  "39": {
+    "number": 39,
+    "common_name": "Black Swordtail",
+    "scientific_name": "Papilio polyxenes asterius",
+    "region": "Butterflies of Africa",
+    "file": "39.png"
+  },
+  "40": {
+    "number": 40,
+    "common_name": "Gold Banded Forester",
+    "scientific_name": "Euphaedra neophron",
+    "region": "Butterflies of Africa",
+    "file": "40.png"
+  },
+  "41": {
+    "number": 41,
+    "common_name": "Table Mountain Beauty",
+    "scientific_name": "Aeropetes tulbaghia",
+    "region": "Butterflies of Africa",
+    "file": "41.png"
+  },
+  "42": {
+    "number": 42,
+    "common_name": "African Monarch",
+    "scientific_name": "Danaus chrysippus",
+    "region": "Butterflies of Africa",
+    "file": "42.png"
+  },
+  "43": {
+    "number": 43,
+    "common_name": "Blood-red Glider",
+    "scientific_name": "Cymothoe sangaris",
+    "region": "Butterflies of Africa",
+    "file": "43.png"
+  },
+  "44": {
+    "number": 44,
+    "common_name": "Spotted-Lilac Nymph",
+    "scientific_name": "Asterope pechuelli",
+    "region": "Butterflies of Africa",
+    "file": "44.png"
+  },
+  "45": {
+    "number": 45,
+    "common_name": "Blue Morpho Butterfly",
+    "scientific_name": "Morpho peleides",
+    "region": "Butterflies of Africa",
+    "file": "45.png"
+  },
+  "46": {
+    "number": 46,
+    "common_name": "Green Leaf Mimic",
+    "scientific_name": "Charaxes eupale",
+    "region": "Butterflies of Africa",
+    "file": "46.png"
+  },
+  "47": {
+    "number": 47,
+    "common_name": "Blue Mother-of-pearl",
+    "scientific_name": "Protogoniomorpha temora",
+    "region": "Butterflies of Africa",
+    "file": "47.png"
+  },
+  "48": {
+    "number": 48,
+    "common_name": "Spotted Joker",
+    "scientific_name": "Byblia ilithyia",
+    "region": "Butterflies of Africa",
+    "file": "48.png"
+  },
+  "49": {
+    "number": 49,
+    "common_name": "China Nawab",
+    "scientific_name": "Polyura narcaeus",
+    "region": "Butterflies of Asia",
+    "file": "49.png"
+  },
+  "50": {
+    "number": 50,
+    "common_name": "Dark Judy",
+    "scientific_name": "Abisara fylla",
+    "region": "Butterflies of Asia",
+    "file": "50.png"
+  },
+  "51": {
+    "number": 51,
+    "common_name": "Aldania Mimic",
+    "scientific_name": "Aldania imitans",
+    "region": "Butterflies of Asia",
+    "file": "51.png"
+  },
+  "52": {
+    "number": 52,
+    "common_name": "Great Blackvein",
+    "scientific_name": "Aporia agathon",
+    "region": "Butterflies of Asia",
+    "file": "52.png"
+  },
+  "53": {
+    "number": 53,
+    "common_name": "Chinese Map Butterfly",
+    "scientific_name": "Araschnia davidis",
+    "region": "Butterflies of Asia",
+    "file": "53.png"
+  },
+  "54": {
+    "number": 54,
+    "common_name": "Common Windmill",
+    "scientific_name": "Atrophaneura polyeuctes",
+    "region": "Butterflies of Asia",
+    "file": "54.png"
+  },
+  "55": {
+    "number": 55,
+    "common_name": "Chinese Peacock",
+    "scientific_name": "Papilio bianor",
+    "region": "Butterflies of Asia",
+    "file": "55.png"
+  },
+  "56": {
+    "number": 56,
+    "common_name": "False Comma",
+    "scientific_name": "Nymphalis l-album",
+    "region": "Butterflies of Asia",
+    "file": "56.png"
+  },
+  "57": {
+    "number": 57,
+    "common_name": "Popinjay",
+    "scientific_name": "Stibochiona nicea",
+    "region": "Butterflies of Asia",
+    "file": "57.png"
+  },
+  "58": {
+    "number": 58,
+    "common_name": "Stately Nawab",
+    "scientific_name": "Polyura dolon",
+    "region": "Butterflies of Asia",
+    "file": "58.png"
+  },
+  "59": {
+    "number": 59,
+    "common_name": "Orange Punch",
+    "scientific_name": "Dodona egeon",
+    "region": "Butterflies of Asia",
+    "file": "59.png"
+  },
+  "60": {
+    "number": 60,
+    "common_name": "The Red Lacewing",
+    "scientific_name": "Cethosia biblis",
+    "region": "Butterflies of Asia",
+    "file": "60.png"
+  },
+  "61": {
+    "number": 61,
+    "common_name": "Glasswing",
+    "scientific_name": "Acraea andromacha",
+    "region": "Australian Butterflies",
+    "file": "61.png"
+  },
+  "62": {
+    "number": 62,
+    "common_name": "Icilius Blue",
+    "scientific_name": "Jalmenus icilius",
+    "region": "Australian Butterflies",
+    "file": "62.png"
+  },
+  "63": {
+    "number": 63,
+    "common_name": "Lesser Wanderer",
+    "scientific_name": "Danaus chrysippus",
+    "region": "Australian Butterflies",
+    "file": "63.png"
+  },
+  "64": {
+    "number": 64,
+    "common_name": "Pea Blue",
+    "scientific_name": "Lampides boeticus",
+    "region": "Australian Butterflies",
+    "file": "64.png"
+  },
+  "65": {
+    "number": 65,
+    "common_name": "Australian Admiral",
+    "scientific_name": "Vanessa itea",
+    "region": "Australian Butterflies",
+    "file": "65.png"
+  },
+  "66": {
+    "number": 66,
+    "common_name": "Lemon Emigrant",
+    "scientific_name": "Catopsilia pomona",
+    "region": "Australian Butterflies",
+    "file": "66.png"
+  },
+  "67": {
+    "number": 67,
+    "common_name": "Orange Migrant",
+    "scientific_name": "Catopsilia scylla",
+    "region": "Australian Butterflies",
+    "file": "67.png"
+  },
+  "68": {
+    "number": 68,
+    "common_name": "Common Eggfly",
+    "scientific_name": "Hypolimnas bolina",
+    "region": "Australian Butterflies",
+    "file": "68.png"
+  },
+  "69": {
+    "number": 69,
+    "common_name": "Meadow Argus",
+    "scientific_name": "Junonia villida",
+    "region": "Australian Butterflies",
+    "file": "69.png"
+  },
+  "70": {
+    "number": 70,
+    "common_name": "Chequered Swallowtail",
+    "scientific_name": "Papilio demoleus",
+    "region": "Australian Butterflies",
+    "file": "70.png"
+  },
+  "71": {
+    "number": 71,
+    "common_name": "Painted Lady",
+    "scientific_name": "Vanessa cardui",
+    "region": "Australian Butterflies",
+    "file": "71.png"
+  },
+  "72": {
+    "number": 72,
+    "common_name": "Dingy Swallowtail",
+    "scientific_name": "Papilio anactus",
+    "region": "Australian Butterflies",
+    "file": "72.png"
+  }
+}
